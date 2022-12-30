@@ -1,0 +1,46 @@
+<!DOCSIGN>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css">
+  <header>
+    <title>Survey Form test</title>
+  </header>
+  <main>
+  <body>
+    <h1 id="title">freeCodeCamp Survey</h1>
+    <p id="description">This form is to input user's name, email, and number.</p>
+    <fieldset>
+      <form id="survey-form">
+        <label id="name-label">Name
+          <input id="name" type="text" required placeholder="Your name here">
+        </label>
+        <label id="email-label">Email
+          <input id="email" type="email" required placeholder="Your email here">
+        </label>
+        <label id="number-label">Number
+          <input id="number" type="number" min="1" max="100" placeholder="Your number input">
+        </label>
+        <label for="dropdown">Do you own your home or rent?
+          <select id="dropdown"> 
+            <option>Own</option>
+            <option>Rent</option>
+            <option>Decline</option>
+          </select>
+        </label>
+        <label name="employment"> Employment history
+          <input type="radio" name="employment" value="1"> FullTime
+          <input type="radio" name="employment" value="2"> PartTime
+          <input type="radio" name="employment" value="3"> Unemployed
+          </label>
+          <label name="dog"> Do you have a dog?
+            <input type="checkbox" name="dog" value="4">Yes
+            <input type="checkbox" name="dog" value="5">No
+            </label>
+            <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I am the most interesting man..."></textarea>
+        </label>
+        <input type="submit" id="submit">
+      </form>
+    </fieldset>
+  </body>
+</main>
+</html>
